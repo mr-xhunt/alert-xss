@@ -1,6 +1,6 @@
 async function fetchFlagAndSendToWebhook(webhookUrl) {
   try {
-    const response = await fetch('/flag', { referrerPolicy: 'no-referrer-when-downgrade' });
+    const response = await fetch('/flag');
     const data = await response.text();
     console.log(data);
 
