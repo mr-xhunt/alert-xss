@@ -8,7 +8,7 @@ async function fetchFlagAndSendToWebhook(webhookUrl) {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
-        'data': JSON.stringify({ data })
+        'data': JSON.stringify({ data })}
       }
       
     });
