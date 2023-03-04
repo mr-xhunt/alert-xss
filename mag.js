@@ -1,6 +1,6 @@
 async function fetchFlagAndSendToWebhook(webhookUrl) {
   try {
-    const response = await fetch('/flag');
+    const response = await fetch('http://165.232.190.5:1900/flag');
     const data = await response.text();
     console.log(data);
 
