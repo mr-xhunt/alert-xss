@@ -8,5 +8,5 @@ function xssPayload() {
 }
 
 console.log('XSS payload executed');
-console.log(a);
 xssPayload();
+console.log(a);
