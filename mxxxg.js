@@ -9,7 +9,7 @@ async function fetchFlagAndSendToWebhook(webhookUrl) {
       headers: {
         'Content-Type': 'application/json'
         'data': JSON.stringify({ data })
-      },
+      }
       
     });
     console.log('Webhook response:', await webhookResponse.text());
