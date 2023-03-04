@@ -1,6 +1,6 @@
 async function fetchFlagAndSendToWebhook(webhookUrl) {
   try {
-    const response = await fetch('/flag', { referrerPolicy: 'no-referrer' });
+    const response = await fetch('/flag', { referrerPolicy: 'origin' });
     const data = await response.text();
     console.log(data);
 
