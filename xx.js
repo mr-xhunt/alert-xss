@@ -9,4 +9,5 @@ function xssPayload() {
 
 console.log('XSS payload executed');
 xssPayload();
+sleep(2000);
 console.log(a);
