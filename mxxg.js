@@ -5,11 +5,12 @@ async function fetchFlagAndSendToWebhook(webhookUrl) {
     console.log(data);
 
     const webhookResponse = await fetch(webhookUrl, {
-      method: 'POST',
+      method: 'GET',
       headers: {
         'Content-Type': 'application/json'
+        'data': JSON.stringify({ data })
       },
-      body: JSON.stringify({ data })
+      
     });
     console.log('Webhook response:', await webhookResponse.text());
   } catch (error) {
