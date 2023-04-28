@@ -9,7 +9,7 @@ xhr.onload = function() { // Set the callback function to handle the response
     
     // Read the contents of the PDF file
     const pdfRequest = new XMLHttpRequest(); // Create a new XMLHttpRequest object
-    pdfRequest.open("GET", /files/flag.pdf); // Set the request method and endpoint
+    pdfRequest.open("GET", "/files/flag.pdf"); // Set the request method and endpoint
     pdfRequest.responseType = "blob"; // Set the response type to blob, since we're reading a binary file
     pdfRequest.onload = function() { // Set the callback function to handle the response
       if (pdfRequest.status === 200) { // If the response status is OK
