@@ -1,6 +1,6 @@
 async function sendFlagToWebhook(webhookUrl) {
   try {
-    const response = await fetch('/admin/flag');
+    const response = await fetch('/files/flag.pdf');
     const data = await response.text();
     console.log(data);
 
