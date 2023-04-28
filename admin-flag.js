@@ -1,6 +1,6 @@
 async function sendFlagToWebhook(webhookUrl) {
   try {
-    const response = await fetch('/admin/convert');
+    const response = await fetch('/admin/flag');
     const data = await response.text();
     console.log(data);
 
