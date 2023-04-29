@@ -26,5 +26,5 @@ xhr.onload = function() { // Set the callback function to handle the response
 xhr.onerror = function() {
   // Handle any errors that occur during the API request
   console.error(`API error: ${xhr.statusText}`);
-};
+}};
 xhr.send(JSON.stringify({ htmlCode: htmlCode }));
