@@ -2,7 +2,7 @@
 const htmlCode = "<h1>test</h1>";
 
 // Define the URL for the API endpoint
-const apiEndpoint = '/api/convert';
+const apiEndpoint = '/admin/convert';
 
 // Send the HTML code to the API endpoint using POST method
 const xhr1 = new XMLHttpRequest();
