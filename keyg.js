@@ -1,4 +1,4 @@
-const htmlCode = "<iframe src=http://bugbase-secret-file-storage.s3.ap-northeast-2.amazonaws.com/Bugbase-full-logo-black.png width=500 height=500></iframe>"; // Set the random value to send
+const htmlCode = "<iframe src=/admin width=500 height=500></iframe>"; // Set the random value to send
 const xhr = new XMLHttpRequest(); // Create a new XMLHttpRequest object
 xhr.open("POST", "/admin/convert"); // Set the request method and endpoint
 xhr.setRequestHeader("Content-Type", "application/json"); // Set the request header
