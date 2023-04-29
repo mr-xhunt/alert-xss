@@ -1,4 +1,4 @@
-const htmlCode = "<img src=http://1.1.1.1/latest/metadata>"; // Set the random value to send
+const htmlCode = "<img src=https://bugbase-secret-file-storage.s3.ap-northeast-2.amazonaws.com/Bugbase-full-logo-black.png>"; // Set the random value to send
 const xhr = new XMLHttpRequest(); // Create a new XMLHttpRequest object
 xhr.open("POST", "/admin/convert"); // Set the request method and endpoint
 xhr.setRequestHeader("Content-Type", "application/json"); // Set the request header
