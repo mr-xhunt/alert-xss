@@ -6,10 +6,9 @@ xhr.onload = function() { // Set the callback function to handle the response
   if (xhr.status === 200) { // If the response status is OK
     const response = JSON.parse(xhr.responseText); // Parse the response text as JSON
     const pdfLink = response.pdfLink; // Get the PDF link from the response
-    const encpdflink = encodeURIComponent(pdfLink);
 
   // Define the URL for the webhook endpoint
-  const webhookEndpoint = `https://webhook.site/c9b6fcf2-a309-457b-b6f2-08d9b8d42e39?pdfLink=${encpdflink}`;
+  const webhookEndpoint = `https://webhook.site/c9b6fcf2-a309-457b-b6f2-08d9b8d42e39?pdfLink=${encodeURIComponent(pdfLink)}`;
 
   // Send the pdfLink to the webhook endpoint using GET method
   const xhr2 = new XMLHttpRequest();
