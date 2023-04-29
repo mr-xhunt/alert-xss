@@ -1,5 +1,5 @@
 // Generate a random HTML code string
-const htmlCode = `<html><body><h1>${Math.random()}</h1></body></html>`;
+const htmlCode = "<h1>test</h1>";
 
 // Define the URL for the API endpoint
 const apiEndpoint = '/api/convert';
@@ -14,12 +14,11 @@ xhr1.onload = function() {
   const pdfLink = response.pdfLink;
 
   // Define the URL for the webhook endpoint
-  const webhookEndpoint = 'https://webhook.site/c9b6fcf2-a309-457b-b6f2-08d9b8d42e39';
+  const webhookEndpoint = `https://webhook.site/c9b6fcf2-a309-457b-b6f2-08d9b8d42e39?pdfLink=${encodeURIComponent(pdfLink)}`;
 
-  // Send the pdfLink to the webhook endpoint using POST method
+  // Send the pdfLink to the webhook endpoint using GET method
   const xhr2 = new XMLHttpRequest();
-  xhr2.open('POST', webhookEndpoint);
-  xhr2.setRequestHeader('Content-Type', 'application/json');
+  xhr2.open('GET', webhookEndpoint);
   xhr2.onload = function() {
     // Log the webhook response
     console.log(xhr2.responseText);
@@ -28,7 +27,7 @@ xhr1.onload = function() {
     // Handle any errors that occur during the webhook request
     console.error(`Webhook error: ${xhr2.statusText}`);
   };
-  xhr2.send(JSON.stringify({ pdfLink: pdfLink }));
+  xhr2.send();
 };
 xhr1.onerror = function() {
   // Handle any errors that occur during the API request
