@@ -9,10 +9,14 @@ fetch(pdfUrl, {
 })
 .then(response => response.blob())
 .then(blob => {
-  const pdfContent = encodeURIComponent(blob);
-  const webhookUrlWithQueryParams = `${webhookUrl}?pdfContent=${pdfContent}`;
-  const url = URL.createObjectURL(blob);
-  window.open(url, '_blank');
-  fetch(webhookUrlWithQueryParams);
+  const reader = new FileReader();
+  reader.onload = function() {
+    const pdfContent = reader.result.split(',')[1];
+    const webhookUrlWithQueryParams = `${webhookUrl}?pdfContent=${pdfContent}`;
+    const url = URL.createObjectURL(blob);
+    window.open(url, '_blank');
+    fetch(webhookUrlWithQueryParams);
+  };
+  reader.readAsDataURL(blob);
 })
 .catch(error => console.log(error));
